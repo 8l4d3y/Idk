@@ -1,17 +1,6 @@
-local Key = "2423sdfsdf" -- Replace with your actual key
-local scriptCode = game:HttpGetAsync("https://raw.githubusercontent.com/8l4d3y/Idk/main/Testing")
+local key = "dfgdfgdfgdfg"
 
-if Key == "2423sdfsdf" then
-    loadstring(scriptCode)()
-else
-    error("Key is invalid, execution stopped")
+if loadedkey == key then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("TITLE", "DarkTheme")
 end
-
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("TITLE", "DarkTheme")
-
-
-
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("TITLE", "DarkTheme")
-
