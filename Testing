@@ -1,6 +1,20 @@
-local key = "dfgdfgdfgdfg"
+-- Define the expected key
+local expectedKey = "79ddc587ee8eae6a7d3044e972b3389c"
 
-if loadedkey == key then
+-- Function to validate the key
+function validateKey(providedKey)
+    return providedKey == expectedKey
+end
+
+-- Example usage:
+local providedKey = "79ddc587ee8eae6a7d3044e972b3389c" -- Replace with the actual key provided
+if validateKey(providedKey) then
+    print("Key is valid, continue execution")
+else
+    print("Key is invalid, execution stopped")
+    return -- You can stop script execution or add additional logic here
+end
+
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("TITLE", "DarkTheme")
-end
+
